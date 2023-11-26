@@ -1,10 +1,15 @@
 {{!-- app/templates/new-task-page.hbs --}}
 <h1>Add New Task</h1>
 
+<div class="elements">
 <form {{on "submit" this.addTask}}>
+  
   <input type="text" id="title" placeholder="Title" required={{true}} >
   <input type="text" id="description" placeholder="Description" required={{true}}>
-  <button type="submit">SUBMIT</button>
+  <button type="submit" id="submitbtn">SUBMIT</button>
+   
+  
 </form>
-  <button onclick={{action "goBackToDo"}} type="submit">GO BACK</button>
+  <button onclick={{action "goBackToDo"}} type="submit" id="gobackbtn">GO BACK</button>
+</div>
 

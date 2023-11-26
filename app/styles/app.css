@@ -27,65 +27,138 @@ h1{
 }
 
 .new-task-button{
-    margin-left: 15vw;
-    font-size: 30px;
+    margin-left: 180px;
+    font-size: 20px;
     background-color: rgb(192,192,192);
-    width: 300px;
-    height: 50px;
+    width: 200px;
+    height: 30px;
     border-radius: 10px;
-    padding:2vh
+    padding:5px;
 }
 
 .tit-des{
-    font-size: 40px;
-    padding-left: 45vw; 
+    font-size: 30px;
+    padding-left: 10px; 
     color: rgb(192,192,192);
-    margin-left:15vw;
-    margin-top:15vh;
+    margin-left:400px;
+    margin-top:30px;
 }
 
 #description-id{
-    padding-left:32vw;
+    padding-left:150px;
 }
 
 .table-row{
     display: flex;
-    margin-left: 10vw;
-    width: 1600px;
+    margin-left: 300px;
+    width: 900px;
     height: max-content;
     align-items: center;
-    justify-content: center;
     border-radius: 20px;
     margin-top:0.3vh;
+
 }
 
 .trash-button{
     size:60px;
 }
 
-.table-row:nth-child(even) {
-    background-color: darkgreen;
-}
 
 .table-row:nth-child(odd) {
     background-color: rgb(192,192,192);
 }
 
 .todos{
-    font-size: 30px;
+    padding-left: 50px;
+    font-size: 15px;
     font-weight: bold;
-    margin-right: 15vw;
     color: rgb(0,33,71);
-    padding:40px;
-    width: 600px;
+    width: 200px;
     height: 100%;
-
     overflow-y: auto;
-    word-break:break-all;
+    word-wrap: break-word;
+    border-right: 3px rgb(43,99,124) solid;
 }
 
 .radio-buttons{
-    font-size: 22px;
+    padding-left: 100px;
+    font-size: 15px;
     color: rgb(0,33,71);
     font-weight: bold;
+    flex-direction: column;
+}
+
+#deletebtn{
+
+    all: unset;
+    padding: 5px;
+    font-size: 12px;
+    background-color: rgb(0,33,71);
+    color:  rgb(192,192,192);
+    border-radius: 30px;
+    margin-left: 10px;
+    justify-content: center;
+    align-content: center;
+    width: max-content;
+    word-wrap: break-word;
+ 
+    
+}
+
+.elements{
+    margin-left: 600px;
+    width: min-content;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width: max-content;
+    height: min-content;
+    border: solid 3px rgb(0,33,71);
+    border-radius: 10px;
+}
+#title{
+    width: 300px;
+    height: 10px;
+}
+#description{
+    width: 300px;
+    height: 50px;
+}
+#submitbtn{
+     
+      all: unset;
+      color: rgb(0,33,71);
+      background-color: rgb(192,192,192);
+      border-radius: 10px;
+      padding-bottom: 30px;
+      padding: 10px;
+      margin-left: 120px;
+      margin-top: 5px;
+      width: 70px;
+      align-items: center;
+
+}
+
+#submitbtn:hover,#gobackbtn:hover{
+    background-color: bisque;
+}
+
+#gobackbtn{
+  
+    all: unset;
+    color: rgb(0,33,71);
+    background-color: rgb(192,192,192);
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-top: 5px;
+    width: 100px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+
 }

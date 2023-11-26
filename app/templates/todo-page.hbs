@@ -15,15 +15,15 @@
         <div class = "table-row">
             <div class="table-elements">
                <td>
-               <button {{on "click" (fn this.deleteTask task.id)}}>Delete</button>
+               <button id="deletebtn" {{on "click" (fn this.deleteTask task.id)}}>DELETE</button>
                </td>
                 <td class="todos">{{task.title}}</td>
                 <td class = "todos">{{task.description}}</td>
             </div>
             <td class="radio-buttons">
-                <input type="radio" name="taskStatus-{{task.id}}" value="başlanmadı"> Başlanmadı<br>
-                <input type="radio" name="taskStatus-{{task.id}}" value="devam ediyor"> Devam Ediyor<br>
-                <input type="radio" name="taskStatus-{{task.id}}" value="bitti"> Bitti<br>
+                <input type="radio" name="taskStatus-{{task.id}}" value="ns">not started<br>
+                <input type="radio" name="taskStatus-{{task.id}}" value="ip">in progress<br>
+                <input type="radio" name="taskStatus-{{task.id}}" value="f">finished<br>
             </td>
 
         </div>
